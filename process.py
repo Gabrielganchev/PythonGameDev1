@@ -6,11 +6,11 @@ def process(bug, FPS, total_frames):
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-
+# makes the game close   when event is quit
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_e:
                 classes.BugProjectile.fire = not classes.BugProjectile.fire
-
+# goes for the E key is pressed and witchers the from spear to frost
     keys = pygame.key.get_pressed()
 
     if keys[pygame.K_d]:

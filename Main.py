@@ -22,17 +22,17 @@ while True:
 # the closing crap
     process(bug, FPS, total_frames)
 
-    bug.motion(SCREENWIDTH ,SCREENHEIGHT)
-    enemy1.fly(SCREENWIDTH)
-    BugProjectile.movement()
+    bug.motion(SCREENWIDTH ,SCREENHEIGHT)# the motion for the bug
+    enemy1.fly(SCREENWIDTH)# writes the enemy 1
+    BugProjectile.movement() # movement of the bug
     Enemy.update_all(SCREENWIDTH,SCREENHEIGHT)
-    total_frames += 1
+    total_frames += 1 # the frame for the while
 
 
 
     screen.blit(background, (0,0)) # displays the background image
     BaseClass.allsprites.draw(screen)
-    BugProjectile.List.draw(screen)
+    BugProjectile.List.draw(screen)# drawns the bug
     pygame.display.flip()
 
     clock.tick(FPS)
